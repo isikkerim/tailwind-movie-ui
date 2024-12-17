@@ -1,0 +1,28 @@
+/* Genel stil */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Film kartları için stil */
+  .movie-card {
+    background-color: #2d3748;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .movie-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Arama çubuğu ve butonu */
+  input#search {
+    transition: box-shadow 0.3s;
+  }
+  
+  input#search:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  }
+  

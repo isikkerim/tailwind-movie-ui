@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/logo.jpg" />
+  <title>Movie Site</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white">
+  <header class="bg-gray-800 py-4 shadow-lg">
+    <div class="container mx-auto flex items-center justify-between">
+      <img src="assets/logo.jpg" alt="Logo" class="h-10">
+      <nav>
+        <a href="#home" class="mx-2 text-lg">Home</a>
+        <a href="#movies" class="mx-2 text-lg">Movies</a>
+        <a href="#contact" class="mx-2 text-lg">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="p-5">
+    <div class="container mx-auto">
+      <div class="flex items-center mb-5">
+        <input id="search" type="text" class="w-full p-2 bg-gray-700 border-none rounded-l" placeholder="Search for a movie...">
+        <button onclick="searchMovies()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r">Search</button>
+      </div>
+
+      <div id="movies" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="movie-card transform hover:scale-105 transition duration-300">
+          <img src="assets/movie1.jpg" alt="Movie 1" class="w-full h-64 object-cover rounded-lg">
+          <div class="p-4">
+            <h2 class="text-xl font-bold mt-2">bolywood</h2>
+            <p class="text-gray-400">hindistan yapımı bir film</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-yellow-400 font-semibold">⭐ 4.5/5</span>
+              <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4 rounded">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-card transform hover:scale-105 transition duration-300">
+          <img src="assets/movie2.jpg" alt="Movie 2" class="w-full h-64 object-cover rounded-lg">
+          <div class="p-4">
+            <h2 class="text-xl font-bold mt-2">Romantik bir film</h2>
+            <p class="text-gray-400">Romantik kategorisinde bir film</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-yellow-400 font-semibold">⭐ 4.0/5</span>
+              <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4 rounded">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-card transform hover:scale-105 transition duration-300">
+          <img src="assets/movie3.png" alt="Movie 3" class="w-full h-64 object-cover rounded-lg">
+          <div class="p-4">
+            <h2 class="text-xl font-bold mt-2">Gezegenler filmi</h2>
+            <p class="text-gray-400">gezegen şeklinde arama yapabilirsiniz</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-yellow-400 font-semibold">⭐ 4.8/5</span>
+              <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4 rounded">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
